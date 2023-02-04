@@ -3,27 +3,23 @@ function run() {
     var i;
     var j = 65;
 
-    // Assigning ASCII values to uppercase alphabets
     for (i = 1; i <= 26; i++) {
         ascii_codes[i] = String.fromCharCode(j);
         j++;
     }
 
-    // Assigning ASCII values to lowercase alphabets
     j = 97;
     for (i = 27; i <= 52; i++) {
         ascii_codes[i] = String.fromCharCode(j);
         j++;
     }
 
-    // Assigning ASCII values to numbers
     j = 48;
     for (i = 53; i <= 62; i++) {
         ascii_codes[i] = String.fromCharCode(j);
         j++;
     }
 
-    // Assigning ASCII values to symbols
     ascii_codes[63] = '!';
     ascii_codes[64] = '"';
     ascii_codes[65] = '#';
@@ -57,7 +53,6 @@ function run() {
     ascii_codes[93] = '}';
     ascii_codes[94] = '~';
 
-    // Using the assigned values to convert the input value
     var inpt = document.getElementById("inp");
     var res = document.getElementById("res");
     res.innerHTML = ascii_codes[inpt.value];
